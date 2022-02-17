@@ -9,11 +9,13 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "YLProgressBar",
+            name: "YLProgressBarSample",
             targets: ["YLProgressBar"]),
     ],
     targets: [
         .target(
-            name: "YLProgressBar")
+            name: "YLProgressBar",
+            path: "."
+        )
     ]
 )
