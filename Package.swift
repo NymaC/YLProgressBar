@@ -5,7 +5,7 @@ import PackageDescription
 let package = Package(
     name: "YLProgressBar",
     platforms: [
-        .iOS("8.3"), .tvOS("9.0")
+        .iOS(.v9)
     ],
     products: [
         .library(
@@ -14,8 +14,7 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "YLProgressBar",
-            path: "YLProgressBar"
+            name: "YLProgressBar"
         )
     ]
 )
