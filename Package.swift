@@ -1,20 +1,18 @@
-// swift-tools-version:5.1
-// The swift-tools-version declares the minimum version of Swift required to build this package.
+// swift-tools-version:5.3
+
 import PackageDescription
 
 let package = Package(
     name: "YLProgressBar",
-    platforms: [
-        .iOS(.v9)
-    ],
+    platforms: [.iOS(.v9)],
     products: [
         .library(
             name: "YLProgressBar",
-            targets: ["YLProgressBar"]),
+            targets: ["YLProgressBar"])
     ],
     targets: [
         .target(
-            name: "YLProgressBar"
-        )
+            name: "YLProgressBar",
+            dependencies: [])
     ]
 )
